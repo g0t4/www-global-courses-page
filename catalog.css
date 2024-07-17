@@ -107,13 +107,25 @@ nav h2 {
 .course-meta {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-top: auto;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.course-date {
+    font-size: 0.7rem;
+    color: #888;
+    margin-bottom: 0.2rem;
 }
 
 .publisher {
     font-size: 0.8rem;
-    color: #888;
+    color: #666;
 }
 
 .learn-more-btn {
@@ -143,30 +155,4 @@ nav h2 {
     #course-grid {
         grid-template-columns: 1fr;
     }
-}
-
-
-
-.course-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: auto;
-}
-
-.course-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.course-date {
-    font-size: 0.8rem;
-    color: #888;
-    margin-bottom: 0.2rem;
-}
-
-.publisher {
-    font-size: 0.8rem;
-    color: #666;
 }
