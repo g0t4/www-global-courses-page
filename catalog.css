@@ -76,6 +76,8 @@ nav h2 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .course-card:hover {
@@ -84,6 +86,9 @@ nav h2 {
 
 .course-card-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .course-title {
@@ -96,12 +101,14 @@ nav h2 {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .course-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
 }
 
 .publisher {
@@ -136,4 +143,30 @@ nav h2 {
     #course-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.course-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.2rem;
+}
+
+.publisher {
+    font-size: 0.8rem;
+    color: #666;
 }
