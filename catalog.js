@@ -130,7 +130,7 @@ function handleFiltering() {
             courseCards.forEach(card => {
                 const cardPublisher = card.dataset.publisher;
                 if (selectedPublisher === 'all' || cardPublisher === selectedPublisher) {
-                    card.style.display = 'block';
+                    card.style.display = '';
                 } else {
                     card.style.display = 'none';
                 }
