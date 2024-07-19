@@ -71,7 +71,6 @@ const courses = [
 
 const all_publishers = courses.map(course => course.publisher);
 const publishers = ["All", ...new Set(all_publishers)];
-console.log(publishers);
 
 // Function to create publisher filter buttons
 function createPublisherFilters() {
