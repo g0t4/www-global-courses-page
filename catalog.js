@@ -1,7 +1,3 @@
-// List of publishers
-const publishers = ['All', 'Pluralsight', 'Manning', "O'Reilly", 'Self-Published'];
-
-// Course data
 const courses = [
     // Pluralsight courses
     { title: "Authoring and Maintaining GitHub Actions Workflows", description: "Learn to create and manage GitHub Actions workflows effectively.", publisher: "Pluralsight", link: "https://www.pluralsight.com/courses/github-actions-authoring-maintaining-workflows", date: "2024-08-08" },
@@ -72,6 +68,10 @@ const courses = [
     // Self-published course
     { title: "On Writing JavaScript Well", description: "Master the art of writing clean, efficient, and maintainable JavaScript code.", publisher: "Self-Published", link: "https://weshigbee.usefedora.com/p/on-writing-javascript-well" },
 ];
+
+const all_publishers = courses.map(course => course.publisher);
+const publishers = ["All", ...new Set(all_publishers)];
+console.log(publishers);
 
 // Function to create publisher filter buttons
 function createPublisherFilters() {
