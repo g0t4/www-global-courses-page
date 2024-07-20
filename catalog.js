@@ -54,6 +54,7 @@ function createCourseCards() {
 
         const date = course.date ? new Date(course.date) : null;
         const formattedDate = date ? date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '';
+        const showDate = false;
 
         const iconUrl = getPublisherIcon(course.publisher);
         const publisherDisplay = iconUrl
@@ -67,7 +68,7 @@ function createCourseCards() {
                 <div class="course-meta">
                     <div class="course-info">
                         ${publisherDisplay}
-                        ${formattedDate ? `<span class="course-date">${formattedDate}</span>` : ''}
+                        ${showDate ? `<span class="course-date">${formattedDate}</span>` : ''}
                     </div>
                     <div class="course-actions">
                         <a href="${course.link}" target="_blank" class="btn learn-more-btn">Learn More</a>
