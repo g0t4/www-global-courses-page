@@ -23,6 +23,13 @@ async function loadCourses() {
 }
 const all_publishers = () => courses.map(course => course.publisher);
 const publishers = () => ["All", ...new Set(all_publishers())];
+// ... (previous code remains the same)
+
+// Function to update course count
+function updateCourseCount(count) {
+    const countElement = document.getElementById('course-count');
+    countElement.textContent = `Showing ${count} course${count !== 1 ? 's' : ''}`;
+}
 
 // Function to create publisher filter buttons
 function createPublisherFilters() {
@@ -36,6 +43,7 @@ function createPublisherFilters() {
     });
 }
 
+// ... (rest of the code remains the same)
 function getPublisherIcon(publisher) {
     const icons = {
         'Pluralsight': 'https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicon.ico',
@@ -81,7 +89,6 @@ function createCourseCards() {
     });
 }
 
-// Function to handle filtering
 function handleFiltering() {
     const publisherFilters = document.getElementById('publisher-filters');
     const courseCards = document.querySelectorAll('.course-card');
@@ -100,24 +107,30 @@ function handleFiltering() {
             });
 
             // Filter courses
+            let visibleCount = 0;
             courseCards.forEach(card => {
                 const cardPublisher = card.dataset.publisher;
                 if (selectedPublisher === 'all' || cardPublisher === selectedPublisher) {
                     card.style.display = '';
+                    visibleCount++;
                 } else {
                     card.style.display = 'none';
                 }
             });
+
+            // Update course count after filtering
+            updateCourseCount(visibleCount);
         }
     });
 }
 
-// Function to initialize the page
+
 function initializePage() {
     createPublisherFilters();
     createCourseCards();
     handleFiltering();
-}
 
+    updateCourseCount(courses.length);
+}
 // Load courses and initialize the page
 document.addEventListener('DOMContentLoaded', loadCourses);
