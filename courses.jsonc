@@ -52,7 +52,7 @@
     { "title": "ES6 in Motion", "description": "Master the latest features of JavaScript with ES6.", "publisher": "Manning", "link": "https://www.manning.com/livevideo/es6-in-motion" },
 
     // O'Reilly courses
-    { "title": "Using MongoDB with Node.js", "description": "Learn how to integrate MongoDB with Node.js applications.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/course/using-mongodb-with/9781491959084/" },
+    { "title": "Using MongoDB with Node.js", "description": "Using MongoDB with Node.js is the fourth title in Wes Higbee's explanation of all things Node. This course details how to store data - as documents - coming from your JavaScript apps into MongoDB.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/course/using-mongodb-with/9781491959084/" },
     { "title": "Node.js Web Apps with Express", "description": "Build powerful web applications using Node.js and Express.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491958940/" },
     { "title": "Up and Running with Microsoft SQL Server", "description": "Get started with Microsoft SQL Server and learn essential database concepts.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781771375825/" },
     { "title": "Overview of the Node.js Ecosystem", "description": "Explore the vast ecosystem of Node.js and its popular libraries.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491957035/" },
