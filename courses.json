@@ -1,7 +1,7 @@
 {
   "courses": [
     // Pluralsight courses
-    { "title": "Authoring and Maintaining GitHub Actions Workflows", "description": "Learn to create and manage GitHub Actions workflows effectively.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/github-actions-authoring-maintaining-workflows", "date": "2024-08-08" },
+    { "title": "Authoring and Maintaining GitHub Actions Workflows", "description": "Learn to create and manage GitHub Actions workflows effectively.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/github-actions-authoring-maintaining-workflows", "date": "2024-08-08", "repo": "https://github.com/g0t4/course-gh-actions" },
     { "title": "Running Jenkins in Kubernetes", "description": "Explore how to deploy and manage Jenkins in a Kubernetes environment.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/jenkins-kubernetes-running", "date": "2024-05-09" },
     { "title": "Managing Docker on Linux Servers (2nd Edition)", "description": "Master the skills of managing Docker containers on Linux servers.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/docker-linux-servers-managing", "date": "2024-03-19" },
     { "title": "Getting Started with NGINX", "description": "Learn the fundamentals of NGINX web server and reverse proxy.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/nginx-getting-started", "date": "2023-12-07" },

@@ -48,17 +48,19 @@ function createCourseCards() {
                 <p class="course-description">${course.description}</p>
                 <div class="course-meta">
                     <div class="course-info">
-                    <span class="publisher">${course.publisher}</span>
-                    <!--${course.date ? `<span class="course-date">${course.date}</span>` : ''}-->
+                        <span class="publisher">${course.publisher}</span>
+                        ${course.date ? `<span class="course-date">${course.date}</span>` : ''}
                     </div>
-                    <a href="${course.link}" target="_blank" class="learn-more-btn">Learn More</a>
+                    <div class="course-actions">
+                        <a href="${course.link}" target="_blank" class="btn learn-more-btn">Learn More</a>
+                        ${course.repo ? `<a href="${course.repo}" target="_blank" class="btn repo-btn">Repo</a>` : ''}
+                    </div>
                 </div>
             </div>
         `;
         courseGrid.appendChild(card);
     });
 }
-
 // Function to handle filtering
 function handleFiltering() {
     const publisherFilters = document.getElementById('publisher-filters');

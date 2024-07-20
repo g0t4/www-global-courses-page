@@ -156,3 +156,40 @@ nav h2 {
         grid-template-columns: 1fr;
     }
 }
+
+/* repo button */
+
+.course-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.learn-more-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.learn-more-btn:hover {
+    background-color: #2980b9;
+}
+
+.repo-btn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.repo-btn:hover {
+    background-color: #27ae60;
+}
+
+/* end repo button */
