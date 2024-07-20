@@ -25,13 +25,11 @@ const all_publishers = () => courses.map(course => course.publisher);
 const publishers = () => ["All", ...new Set(all_publishers())];
 // ... (previous code remains the same)
 
-// Function to update course count
 function updateCourseCount(count) {
     const countElement = document.getElementById('course-count');
     countElement.textContent = `Showing ${count} course${count !== 1 ? 's' : ''}`;
 }
 
-// Function to create publisher filter buttons
 function createPublisherFilters() {
     const filterContainer = document.getElementById('publisher-filters');
     publishers().forEach(publisher => {
@@ -99,23 +97,15 @@ function handleFiltering() {
 
             // Update button styles
             publisherFilters.querySelectorAll('button').forEach(btn => {
-                if (btn.dataset.publisher === selectedPublisher) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
+                btn.classList.toggle('active', btn.dataset.publisher === selectedPublisher);
             });
 
             // Filter courses
             let visibleCount = 0;
             courseCards.forEach(card => {
-                const cardPublisher = card.dataset.publisher;
-                if (selectedPublisher === 'all' || cardPublisher === selectedPublisher) {
-                    card.style.display = '';
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
+                const isVisible = selectedPublisher === 'all' || card.dataset.publisher === selectedPublisher;
+                card.style.display = isVisible ? '' : 'none';
+                if (isVisible) visibleCount++;
             });
 
             // Update course count after filtering
@@ -124,13 +114,13 @@ function handleFiltering() {
     });
 }
 
-
 function initializePage() {
     createPublisherFilters();
     createCourseCards();
     handleFiltering();
-
-    updateCourseCount(courses.length);
+    updateCourseCount(courses.length); // Initial count update
 }
+
+
 // Load courses and initialize the page
 document.addEventListener('DOMContentLoaded', loadCourses);
