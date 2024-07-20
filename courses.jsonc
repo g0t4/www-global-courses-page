@@ -49,7 +49,7 @@
     {"title":"MySQL Continuous Database Delivery with Flyway","description":"Discover how to use Flyway to version MySQL database changes, ensure continuous database delivery, and manage database changes effectively throughout the development lifecycle.","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/mysql-flyway-continuous-database-delivery","date":"2015-03-26","duration":"5hr 19m","type":"Course","level":"Intermediate"},
 
     // Manning course
-    { "title": "ES6 in Motion", "description": "Master the latest features of JavaScript with ES6.", "publisher": "Manning", "link": "https://learning.oreilly.com/videos/-/10000MNLV201701/" },
+    { "title": "ES6 in Motion", "description": "Master the latest features of JavaScript with ES6.", "publisher": "Manning", "link": "https://www.manning.com/livevideo/es6-in-motion" },
 
     // O'Reilly courses
     { "title": "Using MongoDB with Node.js", "description": "Learn how to integrate MongoDB with Node.js applications.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/course/using-mongodb-with/9781491959084/" },
