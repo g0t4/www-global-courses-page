@@ -1,7 +1,7 @@
 let courses = [];
 
 // Function to remove comment lines from JSON string
-function removeComments(jsonString) {
+function removeSingleLineComments(jsonString) {
     return jsonString
         .split('\n')
         .filter(line => !line.trim().startsWith('//'))
@@ -13,7 +13,7 @@ async function loadCourses() {
     try {
         const response = await fetch('courses.json');
         const text = await response.text();
-        const cleanedJson = removeComments(text);
+        const cleanedJson = removeSingleLineComments(text);
         const data = JSON.parse(cleanedJson);
         courses = data.courses;
         initializePage();
