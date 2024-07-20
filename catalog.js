@@ -1,18 +1,26 @@
 let courses = [];
 
-// Function to load courses from JSON5 file
+// Function to remove comment lines from JSON string
+function removeComments(jsonString) {
+    return jsonString
+        .split('\n')
+        .filter(line => !line.trim().startsWith('//'))
+        .join('\n');
+}
+
+// Function to load courses from JSON file
 async function loadCourses() {
     try {
         const response = await fetch('courses.json');
         const text = await response.text();
-        const data = JSON5.parse(text);
+        const cleanedJson = removeComments(text);
+        const data = JSON.parse(cleanedJson);
         courses = data.courses;
         initializePage();
     } catch (error) {
         console.error('Error loading courses:', error);
     }
 }
-
 const all_publishers = () => courses.map(course => course.publisher);
 const publishers = () => ["All", ...new Set(all_publishers())];
 
