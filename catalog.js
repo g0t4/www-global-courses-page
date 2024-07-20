@@ -46,13 +46,17 @@ function createCourseCards() {
         const date = course.date ? new Date(course.date) : null;
         const formattedDate = date ? date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '';
 
+        const publisherDisplay = course.publisher === 'Pluralsight'
+            ? '<img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicon.ico" alt="Pluralsight" class="publisher-icon">'
+            : `<span class="publisher">${course.publisher}</span>`;
+
         card.innerHTML = `
             <div class="course-card-content">
                 <h2 class="course-title">${course.title}</h2>
                 <p class="course-description">${course.description}</p>
                 <div class="course-meta">
                     <div class="course-info">
-                        <span class="publisher">${course.publisher}</span>
+                        ${publisherDisplay}
                         ${formattedDate ? `<span class="course-date">${formattedDate}</span>` : ''}
                     </div>
                     <div class="course-actions">

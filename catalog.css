@@ -199,3 +199,18 @@ nav h2 {
 
 
 /* end repo button */
+
+/* favicons for publishers */
+.publisher-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* end favicons for publishers */
