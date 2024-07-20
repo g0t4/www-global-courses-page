@@ -36,6 +36,15 @@ function createPublisherFilters() {
     });
 }
 
+function getPublisherIcon(publisher) {
+    const icons = {
+        'Pluralsight': 'https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicon.ico',
+        'Manning': 'https://www.manning.com/favicon.ico',
+        'O\'Reilly': 'https://www.oreilly.com/favicon.ico'
+    };
+    return icons[publisher] || null;
+}
+
 function createCourseCards() {
     const courseGrid = document.getElementById('course-grid');
     courses.forEach(course => {
@@ -46,8 +55,9 @@ function createCourseCards() {
         const date = course.date ? new Date(course.date) : null;
         const formattedDate = date ? date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '';
 
-        const publisherDisplay = course.publisher === 'Pluralsight'
-            ? '<img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicon.ico" alt="Pluralsight" class="publisher-icon">'
+        const iconUrl = getPublisherIcon(course.publisher);
+        const publisherDisplay = iconUrl
+            ? `<img src="${iconUrl}" alt="${course.publisher}" class="publisher-icon">`
             : `<span class="publisher">${course.publisher}</span>`;
 
         card.innerHTML = `
