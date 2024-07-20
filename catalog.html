@@ -12,16 +12,21 @@
             <h1>Wes Higbee's Course Catalog</h1>
         </header>
 
-
-        <div class="filter-section">
+        <nav class="filter-section">
             <h2>Filter by Publisher:</h2>
             <div id="publisher-filters"></div>
-            <p id="course-count"></p>
+            <div id="course-count"></div>
+        </nav>
+
+        <div class="sort-section">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="title">Title (A-Z)</option>
+                <option value="date">Date (Newest First)</option>
+            </select>
         </div>
 
-        <main id="course-grid">
-            <!-- Course cards will be dynamically inserted here -->
-        </main>
+        <main id="course-grid" role="main"></main>
     </div>
 
     <script src="catalog.js"></script>

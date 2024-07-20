@@ -21,9 +21,9 @@ async function loadCourses() {
         console.error('Error loading courses:', error);
     }
 }
+
 const all_publishers = () => courses.map(course => course.publisher);
 const publishers = () => ["All", ...new Set(all_publishers())];
-// ... (previous code remains the same)
 
 function updateCourseCount(count) {
     const countElement = document.getElementById('course-count');
@@ -41,7 +41,6 @@ function createPublisherFilters() {
     });
 }
 
-// ... (rest of the code remains the same)
 function getPublisherIcon(publisher) {
     const icons = {
         'Pluralsight': 'https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicon.ico',
@@ -51,16 +50,17 @@ function getPublisherIcon(publisher) {
     return icons[publisher] || null;
 }
 
-function createCourseCards() {
+function createCourseCards(sortedCourses) {
     const courseGrid = document.getElementById('course-grid');
-    courses.forEach(course => {
+    courseGrid.innerHTML = ''; // Clear existing cards
+    sortedCourses.forEach(course => {
         const card = document.createElement('div');
         card.className = 'course-card';
         card.dataset.publisher = course.publisher.toLowerCase();
 
         const date = course.date ? new Date(course.date) : null;
         const formattedDate = date ? date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '';
-        const showDate = false;
+        const showDate = true; // Changed to true to display dates for sorting
 
         const iconUrl = getPublisherIcon(course.publisher);
         const publisherDisplay = iconUrl
@@ -87,40 +87,55 @@ function createCourseCards() {
     });
 }
 
-function handleFiltering() {
-    const publisherFilters = document.getElementById('publisher-filters');
-    const courseCards = document.querySelectorAll('.course-card');
-
-    publisherFilters.addEventListener('click', function (e) {
-        if (e.target.tagName === 'BUTTON') {
-            const selectedPublisher = e.target.dataset.publisher;
-
-            // Update button styles
-            publisherFilters.querySelectorAll('button').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.publisher === selectedPublisher);
-            });
-
-            // Filter courses
-            let visibleCount = 0;
-            courseCards.forEach(card => {
-                const isVisible = selectedPublisher === 'all' || card.dataset.publisher === selectedPublisher;
-                card.style.display = isVisible ? '' : 'none';
-                if (isVisible) visibleCount++;
-            });
-
-            // Update course count after filtering
-            updateCourseCount(visibleCount);
+function sortCourses(courses, sortBy) {
+    return [...courses].sort((a, b) => {
+        if (sortBy === 'title') {
+            return a.title.localeCompare(b.title);
+        } else if (sortBy === 'date') {
+            const dateA = a.date ? new Date(a.date) : new Date(0);
+            const dateB = b.date ? new Date(b.date) : new Date(0);
+            return dateB - dateA;
         }
     });
 }
 
-function initializePage() {
-    createPublisherFilters();
-    createCourseCards();
-    handleFiltering();
-    updateCourseCount(courses.length); // Initial count update
+function handleFiltering() {
+    const publisherFilters = document.getElementById('publisher-filters');
+    const sortSelect = document.getElementById('sort-select');
+    let filteredCourses = courses;
+
+    function updateDisplay() {
+        const selectedPublisher = publisherFilters.querySelector('button.active').dataset.publisher;
+        const sortBy = sortSelect.value;
+
+        filteredCourses = courses.filter(course =>
+            selectedPublisher === 'all' || course.publisher.toLowerCase() === selectedPublisher
+        );
+
+        const sortedCourses = sortCourses(filteredCourses, sortBy);
+        createCourseCards(sortedCourses);
+        updateCourseCount(filteredCourses.length);
+    }
+
+    publisherFilters.addEventListener('click', function (e) {
+        if (e.target.tagName === 'BUTTON') {
+            publisherFilters.querySelectorAll('button').forEach(btn => {
+                btn.classList.toggle('active', btn === e.target);
+            });
+            updateDisplay();
+        }
+    });
+
+    sortSelect.addEventListener('change', updateDisplay);
+
+    // Initial display
+    updateDisplay();
 }
 
+function initializePage() {
+    createPublisherFilters();
+    handleFiltering();
+}
 
 // Load courses and initialize the page
 document.addEventListener('DOMContentLoaded', loadCourses);

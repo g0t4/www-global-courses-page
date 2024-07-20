@@ -118,12 +118,6 @@ nav h2 {
     align-items: flex-start;
 }
 
-.course-date {
-    font-size: 0.7rem;
-    color: #888;
-    margin-bottom: 0.2rem;
-}
-
 .publisher {
     font-size: 0.8rem;
     color: #666;
@@ -239,4 +233,35 @@ nav h2 {
     color: #666;
     white-space: nowrap;
     padding-left: 1rem;
+}
+
+/* Sorting Styles */
+.sort-section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.sort-section label {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+#sort-select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Update course-date to always display */
+.course-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+    display: block;
 }
