@@ -11,7 +11,7 @@ function removeSingleLineComments(jsonString) {
 // Function to load courses from JSON file
 async function loadCourses() {
     try {
-        const response = await fetch('courses.json');
+        const response = await fetch('courses.jsonc');
         const text = await response.text();
         const cleanedJson = removeSingleLineComments(text);
         const data = JSON.parse(cleanedJson);
