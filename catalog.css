@@ -170,26 +170,32 @@ nav h2 {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease;
     font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
 }
 
 .learn-more-btn {
-    background-color: #3498db;
+    background-color: #2196F3; /* A more vibrant blue */
     color: #fff;
 }
 
 .learn-more-btn:hover {
-    background-color: #2980b9;
+    background-color: #1976D2; /* Darker blue for hover state */
 }
 
 .repo-btn {
-    background-color: #2ecc71;
+    background-color: #78909C; /* A muted blue-grey */
     color: #fff;
 }
 
 .repo-btn:hover {
-    background-color: #27ae60;
+    background-color: #607D8B; /* Darker blue-grey for hover state */
 }
+
 
 /* end repo button */
