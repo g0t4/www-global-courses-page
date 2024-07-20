@@ -39,7 +39,7 @@ function createPublisherFilters() {
 function getPublisherIcon(publisher) {
     const icons = {
         'Pluralsight': 'https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicon.ico',
-        'Manning': 'https://www.manning.com/assets/favicon/favicon-06c8d32da14f50950f2c6422e9af1731.png',
+        'Manning': 'https://www.manning.com/assets/favicon/apple-touch-152-63d7a4c42a1ab2ef3d086d87b05927ef.png',
         'O\'Reilly': 'https://www.oreilly.com/favicon.ico'
     };
     return icons[publisher] || null;
