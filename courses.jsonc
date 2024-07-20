@@ -60,7 +60,7 @@
     { "title": "Getting Started with Node.js", "description": "In this Getting Started with Node.js training course, expert author Wes Higbee will teach you everything you need to know to begin incorporating Node.js in your development work. This course is designed for the absolute beginner, meaning no prior experience with Node.js is required.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491954881/" },
 
     // Self-published course
-    { "title": "On Writing JavaScript Well", "description": "Master the art of writing clean, efficient, and maintainable JavaScript code.", "publisher": "Self-Published", "link": "https://weshigbee.usefedora.com/p/on-writing-javascript-well" }
+    { "title": "On Writing JavaScript Well", "description": "Learn how to write code that you're proud of, that builds on the characteristics that produce high quality, valuable software.", "publisher": "Self-Published", "link": "https://weshigbee.usefedora.com/p/on-writing-javascript-well" }
 
   ]
 }
