@@ -1,63 +1,46 @@
 {
   "courses": [
     // Pluralsight courses
-    { "title": "Authoring and Maintaining GitHub Actions Workflows", "description": "Learn to create and manage GitHub Actions workflows effectively.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/github-actions-authoring-maintaining-workflows", "date": "2024-08-08", "repo": "https://github.com/g0t4/course-gh-actions", "duration": "2hr 3m", "type": "Course", "level": "Beginner" },
-    { "title": "Running Jenkins in Kubernetes", "description": "Explore how to deploy and manage Jenkins in a Kubernetes environment.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/jenkins-kubernetes-running", "date": "2024-05-09" },
-    { "title": "Managing Docker on Linux Servers (2nd Edition)", "description": "Master the skills of managing Docker containers on Linux servers.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/docker-linux-servers-managing", "date": "2024-03-19" },
-    { "title": "Getting Started with NGINX", "description": "Learn the fundamentals of NGINX web server and reverse proxy.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/nginx-getting-started", "date": "2023-12-07" },
-    { "title": "Getting Started with Docker on Windows (3rd Edition)", "description": "Dive into running Docker containers on Windows platforms.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/docker-windows-getting-started-2023", "date": "2023-10-30" },
-    { "title": "Containers and Images: The Big Picture (2nd Edition)", "description": "Understand the core concepts of containerization and container images.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/containers-images-big-picture-2023", "date": "2023-09-20" },
-    { "title": "Getting Started with Jenkins (3rd Edition)", "description": "Learn how to set up and use Jenkins for continuous integration and delivery.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/jenkins-getting-started-2023", "date": "2023-08-11" },
-    { "title": "Getting Started with Ansible (2nd Edition)", "description": "Explore automation with Ansible for configuration management and orchestration.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/ansible-getting-started", "date": "2023-04-26" },
-    { "title": "Getting Started with Vagrant (2nd Edition)", "description": "Learn to create and manage development environments with Vagrant.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/vagrant-getting-started", "date": "2022-11-22" },
-    { "title": "Introduction to the HashiCorp Consul Associate Certification", "description": "Prepare for the HashiCorp Consul Associate Certification exam.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/hashicorp-consul-associate-intro-cert", "date": "2022-08-09" },
-    { "title": "Getting Started with HashiCorp Consul (2nd Edition)", "description": "Explore service discovery and configuration with HashiCorp Consul.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/hashicorp-consul-getting-started-cert", "date": "2022-05-10" },
-    // TODO-UPDATED courses/docker-windows-getting-started-2021 (Edition 2) => 2021-11-16
-    { "title": "Getting Started with Docker Swarm (2nd Edition)", "description": "Learn to orchestrate Docker containers using Docker Swarm mode.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/docker-swarm-getting-started/", "date": "2021-06-24" },
-    // TODO-UPDATED courses/managing-docker-linux-servers (Edition 1) => 2021-02-05
-    // TODO-UPDATED courses/getting-started-jenkins (Edition 2?) => 30 Sep 2020
-    // TODO-ORIGINAL courses/getting-started-ansible => 12 Jan 2020
-    // TODO-ORIGINAL courses/devops-executive-briefing => 1 Nov 2018
-    // TODO-ORIGINAL courses/implementing-self-hosted-docker-registry => 4 Jun 2018
-    // TODO-ORIGINAL courses/transpiling-bundling-javascript-webpack => 29 Jan 2018
-    // TODO-ORIGINAL courses/docker-images-containers-aspdotnet-core => 3 Aug 2017
-    // TODO-ORIGINAL courses/deployment-pipeline-aspdotnet-core-docker => 3 Aug 2017
-    // TODO-ORIGINAL courses/aspdotnet-core-msbuild-tooling => 26 May 2017
-
-    // TODO-UPDATED courses/docker-swarm-mode-getting-started => 31 Mar 2017
-    // TODO-ORIGINAL courses/dotnet-core-building-cross-platform-applications => 24 Mar 2017
-    // TODO-UPDATED courses/containers-images-big-picture => 23 Jan 2017
-    // TODO-UPDATED courses/docker-windows-getting-started => 12 Dec 2016
-    // TODO-ORIGINAL courses/dotnet-core-windows-developers-getting-started => 16 Nov 2016
-    // TODO-ORIGINAL courses/teamcity-getting-started => 7 Nov 2016
-    // TODO-ORIGINAL courses/consul-deploying => 19 Sep 2016
-    // TODO-UPDATED courses/jenkins-2-getting-started => 23 Aug 2016
-    // TODO-UPDATED courses/consul-getting-started => 16 Aug 2016
-
-    // TODO-ORIGINAL courses/javascript-asynchronous-modern => 7 Aug 2016
-    // not in GitHub profile (TODO add to GH profile too)
-    { "title": "Reasoning About Asynchronous JavaScript", "description": "This course will help you learn to take advantage of JavaScript's single-threaded nature, as opposed to being caught off guard by it. You'll walk away being able to effortlessly reason about when things execute in JavaScript.", "publisher": "Pluralsight", "link": "https://www.pluralsight.com/courses/asynchronous-javascript-reasoning", "date": "2016-07-01" },
-    // TODO-ORIGINAL courses/mongo-db-csharp-v2-driver => 3 Feb 2016
-    // TODO-ORIGINAL courses/javascript-systemjs-jspm => 5 Nov 2015
-    // TODO-ORIGINAL courses/javascript-testing-wallaby-js => 1 Sep 2015
-    // TODO-ORIGINAL courses/confident-coding-automated-testing-aspdotnet-mvc =>  22 Jun 2015
-    // TODO-ORIGINAL courses/sql-server-flyway-continuous-database-delivery => 12 May 2015
-    // TODO-ORIGINAL courses/mysql-flyway-continuous-database-delivery => 26 Mar 2015
-    // TODO-ORIGINAL courses/vagrant-versioning-environments => 1 Oct 2014
-    // TODO-ORIGINAL courses/using-mongodb-aspdotnet-mvc => 3 Apr 2014
-
-    // Manning course
-    { "title": "ES6 in Motion", "description": "Master the latest features of JavaScript with ES6.", "publisher": "Manning", "link": "https://learning.oreilly.com/videos/-/10000MNLV201701/" },
-
-    // O'Reilly courses
-    { "title": "Using MongoDB with Node.js", "description": "Learn how to integrate MongoDB with Node.js applications.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/course/using-mongodb-with/9781491959084/" },
-    { "title": "Node.js Web Apps with Express", "description": "Build powerful web applications using Node.js and Express.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491958940/" },
-    { "title": "Up and Running with Microsoft SQL Server", "description": "Get started with Microsoft SQL Server and learn essential database concepts.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781771375825/" },
-    { "title": "Overview of the Node.js Ecosystem", "description": "Explore the vast ecosystem of Node.js and its popular libraries.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491957035/" },
-    { "title": "Shell Scripting with JavaScript", "description": "Learn how to create powerful shell scripts using JavaScript.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781771376075/" },
-    { "title": "Getting Started with Node.js", "description": "Begin your journey with Node.js and server-side JavaScript.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491954881/" },
-
-    // Self-published course
-    { "title": "On Writing JavaScript Well", "description": "Master the art of writing clean, efficient, and maintainable JavaScript code.", "publisher": "Self-Published", "link": "https://weshigbee.usefedora.com/p/on-writing-javascript-well" }
+    {"title":"Authoring and Maintaining GitHub Actions Workflows","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/github-actions-authoring-maintaining-workflows","date":"2024-07-07","duration":"2hr 3m","type":"Course","level":"Beginner"},
+    {"title":"Running Jenkins in Kubernetes","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/jenkins-kubernetes-running","date":"2024-05-08","duration":"1hr 32m","type":"Course","level":"Intermediate"},
+    {"title":"Managing Docker on Linux Servers","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-linux-servers-managing","date":"2024-03-18","duration":"1hr 36m","type":"Course","level":"Intermediate"},
+    {"title":"Managing Docker on Linux Servers","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/managing-docker-linux-servers","date":"2021-02-04","duration":"3hr 12m","type":"Course","level":"Intermediate"},
+    {"title":"Getting Started with NGINX","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/nginx-getting-started","date":"2023-12-06","duration":"2hr 4m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Docker on Windows","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-windows-getting-started-2023","date":"2023-10-29","duration":"2hr 1m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Docker on Windows","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-windows-getting-started-2021","date":"2021-11-16","duration":"5hr 34m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Docker on Windows","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-windows-getting-started","date":"2016-12-12","duration":"5hr 41m","type":"Course","level":"Beginner"},
+    {"title":"Containers and Images: The Big Picture","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/containers-images-big-picture-2023","date":"2023-09-19","duration":"2hr 36m","type":"Course","level":"Beginner"},
+    {"title":"Containers and Images: The Big Picture","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/containers-images-big-picture","date":"2017-01-23","duration":"3hr 9m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Jenkins","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/jenkins-getting-started-2023","date":"2023-08-10","duration":"2hr 25m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Jenkins","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/getting-started-jenkins","date":"2020-09-29","duration":"3hr 14m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Jenkins 2","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/jenkins-2-getting-started","date":"2016-08-23","duration":"3hr 36m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Ansible","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/ansible-getting-started","date":"2023-04-25","duration":"2hr 56m","type":"Course","level":"Intermediate"},
+    {"title":"Getting Started with Ansible","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/getting-started-ansible","date":"2020-01-12","duration":"4hr 45m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with Vagrant","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/vagrant-getting-started","date":"2022-11-22","duration":"3hr 3m","type":"Course","level":"Beginner"},
+    {"title":"Introduction to Versioning Environments With Vagrant","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/vagrant-versioning-environments","date":"2014-10-01","duration":"4hr 19m","type":"Course","level":"Intermediate"},
+    {"title":"Introduction to the HashiCorp Consul Associate Certification","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/hashicorp-consul-associate-intro-cert","date":"2022-08-08","duration":"46m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with HashiCorp Consul","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/hashicorp-consul-getting-started-cert","date":"2022-05-09","duration":"3hr 54m","type":"Course","level":"Intermediate"},
+    {"title":"Getting Started with Consul","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/consul-getting-started","date":"2016-08-16","duration":"4hr 16m","type":"Course","level":"Intermediate"},
+    {"title":"Deploying Consul","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/consul-deploying","date":"2016-09-19","duration":"4hr 5m","type":"Course","level":"Intermediate"},
+    {"title":"Getting Started with Docker Swarm","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-swarm-getting-started/","date":"2021-06-24","duration":"4hr 12m","type":"Course","level":"Intermediate"},
+    {"title":"Getting Started with Docker Swarm Mode","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-swarm-mode-getting-started","date":"2017-03-30","duration":"6hr 10m","type":"Course","level":"Beginner"},
+    {"title":"Modern Asynchronous JavaScript","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/javascript-asynchronous-modern","date":"2016-08-07","duration":"6hr 35m","type":"Course","level":"Advanced"},
+    {"title":"Reasoning About Asynchronous JavaScript","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/asynchronous-javascript-reasoning","date":"2016-07-01","duration":"2hr 5m","type":"Course","level":"Intermediate"},
+    {"title":"Webpack: Transpiling and Bundling JavaScript","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/transpiling-bundling-javascript-webpack","date":"2018-01-29","duration":"4hr 55m","type":"Course","level":"Intermediate"},
+    {"title":"Docker Images and Containers for ASP.NET Core 2","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/docker-images-containers-aspdotnet-core","date":"2017-08-03","duration":"4hr","type":"Course","level":"Intermediate"},
+    {"title":"Building a Deployment Pipeline for ASP.NET Core with Docker","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/deployment-pipeline-aspdotnet-core-docker","date":"2017-08-02","duration":"4hr 17m","type":"Course","level":"Intermediate"},
+    {"title":"ASP.NET Core with the New MSBuild Based Tooling","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/aspdotnet-core-msbuild-tooling","date":"2017-05-25","duration":"4hr 21m","type":"Course","level":"Beginner"},
+    {"title":"Building Cross-platform Applications with .NET Core","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/dotnet-core-building-cross-platform-applications","date":"2017-03-24","duration":"7hr 49m","type":"Course","level":"Beginner"},
+    {"title":"Getting Started with .NET Core for Windows Developers","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/dotnet-core-windows-developers-getting-started","date":"2016-11-16","duration":"3hr 15m","type":"Course","level":"Beginner"},
+    {"title":"What Is DevOps: Executive Briefing","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/devops-executive-briefing","date":"2018-11-01","duration":"22m","type":"Course","level":"Beginner"},
+    {"title":"Implementing a Self-hosted Docker Registry","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/implementing-self-hosted-docker-registry","date":"2018-06-04","duration":"4hr 8m","type":"Course","level":"Intermediate"},
+    {"title":"Getting Started with TeamCity","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/teamcity-getting-started","date":"2016-11-07","duration":"4hr 3m","type":"Course","level":"Beginner"},
+    {"title":"Using MongoDB with ASP.NET MVC","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/using-mongodb-aspdotnet-mvc","date":"2014-04-03","duration":"3hr 12m","type":"Course","level":"Intermediate"},
+    {"title":"Using the MongoDB C# v2 Driver","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/mongo-db-csharp-v2-driver","date":"2016-02-03","duration":"3hr 7m","type":"Course","level":"Intermediate"},
+    {"title":"Modern, Modular JavaScript with SystemJS and jspm","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/javascript-systemjs-jspm","date":"2015-11-05","duration":"7hr 25m","type":"Course","level":"Intermediate"},
+    {"title":"Seamless JavaScript Testing with Wallaby.js","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/javascript-testing-wallaby-js","date":"2015-09-01","duration":"3hr 48m","type":"Course","level":"Intermediate"},
+    {"title":"Confident Coding: A Journey to Automated Testing in ASP.NET MVC","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/confident-coding-automated-testing-aspdotnet-mvc","date":"2015-06-22","duration":"2hr 59m","type":"Course","level":"Beginner"},
+    {"title":"SQL Server Continuous Database Delivery with Flyway","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/sql-server-flyway-continuous-database-delivery","date":"2015-05-12","duration":"6hr 25m","type":"Course","level":"Intermediate"},
+    {"title":"MySQL Continuous Database Delivery with Flyway","description":"","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/mysql-flyway-continuous-database-delivery","date":"2015-03-26","duration":"5hr 19m","type":"Course","level":"Intermediate"}
   ]
 }
