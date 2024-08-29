@@ -1,7 +1,5 @@
 {
   "courses": [
-
-    // Pluralsight courses
     {"title":"Authoring and Maintaining GitHub Actions Workflows","description":"Tired of building and deploying software manually? This course will teach you how to automate software from commit through to production using workflows in GitHub Actions. You'll explore triggering workflows, integrating external services, and packaging, distributing, and deploying software.","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/github-actions-authoring-maintaining-workflows","date":"2024-07-07","duration":"2hr 3m","type":"Course","level":"Beginner"},
 
     {"title":"Running Jenkins in Kubernetes","description":"Jenkins and Kubernetes are like two peas in a pod. This course teaches you to set up a Kubernetes cluster with Jenkins running inside, configure a pool of on-demand agents, and fully automate a Jenkins deployment using the official Helm chart with the Jenkins Configuration as Code plugin.","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/jenkins-kubernetes-running","date":"2024-05-08","duration":"1hr 32m","type":"Course","level":"Intermediate"},
@@ -48,10 +46,8 @@
     {"title":"SQL Server Continuous Database Delivery with Flyway","description":"Learn to use Flyway for versioning SQL Server database changes, leveraging versioned changes from your code repository to get early feedback, and simulating production database updates with each check-in.","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/sql-server-flyway-continuous-database-delivery","date":"2015-05-12","duration":"6hr 25m","type":"Course","level":"Intermediate"},
     {"title":"MySQL Continuous Database Delivery with Flyway","description":"Discover how to use Flyway to version MySQL database changes, ensure continuous database delivery, and manage database changes effectively throughout the development lifecycle.","publisher":"Pluralsight","link":"https://www.pluralsight.com/courses/mysql-flyway-continuous-database-delivery","date":"2015-03-26","duration":"5hr 19m","type":"Course","level":"Intermediate"},
 
-    // Manning course
     { "title": "ES6 in Motion", "description": "Master the latest features of JavaScript with ES6.", "publisher": "Manning", "link": "https://www.manning.com/livevideo/es6-in-motion" },
 
-    // O'Reilly courses
     { "title": "Using MongoDB with Node.js", "description": "Using MongoDB with Node.js is the fourth title in Wes Higbee's explanation of all things Node. This course details how to store data - as documents - coming from your JavaScript apps into MongoDB.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/course/using-mongodb-with/9781491959084/" },
     { "title": "Node.js Web Apps with Express", "description": "In this Node.js Web Apps with Express training course, expert author Wes Higbee will teach you how to create web applications and APIs with Express. This course is designed for users that are already familiar with HTML, CSS, and JavaScript.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491958940/" },
     { "title": "Up and Running with Microsoft SQL Server", "description": "In this Up and Running with Microsoft SQL Server training course, expert author Wes Higbee will teach you how to use Microsoft SQL for storage, querying, reporting, and development. This course is designed for the absolute beginner, meaning no previous Microsoft SQL experience is required.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781771375825/" },
@@ -59,7 +55,6 @@
     { "title": "Shell Scripting with JavaScript", "description": "In this Shell Scripting with JavaScript training course, expert author Wes Higbee will teach you how to use Node.js to automate common tasks. This course is designed for users that are already familiar with JavaScript.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781771376075/" },
     { "title": "Getting Started with Node.js", "description": "In this Getting Started with Node.js training course, expert author Wes Higbee will teach you everything you need to know to begin incorporating Node.js in your development work. This course is designed for the absolute beginner, meaning no prior experience with Node.js is required.", "publisher": "O'Reilly", "link": "https://learning.oreilly.com/videos/-/9781491954881/" },
 
-    // Self-published course
     { "title": "On Writing JavaScript Well", "description": "Learn how to write code that you're proud of, that builds on the characteristics that produce high quality, valuable software.", "publisher": "Self-Published", "link": "https://weshigbee.usefedora.com/p/on-writing-javascript-well" }
 
   ]
