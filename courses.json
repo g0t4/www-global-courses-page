@@ -1,6 +1,16 @@
 {
   "courses": [
     {
+      "title": "Summarizing Data in Microsoft Excel",
+      "description": "Do you want to master the art of summarizing data in Excel? This course will guide you through the essentials of data summarization using various tools and techniques in Microsoft Excel. You'll learn to create powerful summaries using formulas, pivot tables, and charts to transform raw data into meaningful insights.",
+      "publisher": "Pluralsight",
+      "link": "https://www.pluralsight.com/courses/microsoft-excel-summarize-data",
+      "date": "2024-08-29",
+      "duration": "1hr 30m",
+      "type": "Course",
+      "level": "Intermediate"
+    },
+    {
       "title": "Authoring and Maintaining GitHub Actions Workflows",
       "description": "Tired of building and deploying software manually? This course will teach you how to automate software from commit through to production using workflows in GitHub Actions. You'll explore triggering workflows, integrating external services, and packaging, distributing, and deploying software.",
       "publisher": "Pluralsight",
